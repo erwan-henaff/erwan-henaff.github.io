@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* own code */
+
+body {
+      background-color: azure; 
+ /*   background-image: url("file:///C:/Users/DCI/Desktop/examples/project/image/sajama.jpg");*/
+}
+h1 {
+    font-size: 250%;
+    font-weight: 600;
+    padding:20px;
+    color:azure;
+    background-color: #1B1056;
+}
+h2 {
+    font-size:200%;
+    color:azure;
+    background-color: #1B1056;
+    padding:20px;
+    
+    position: relative;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: h2nav;
+   animation-duration: 1.5s;
+}
+header {
+    text-align: center;
+}
+footer {
+    text-align:center;
+    padding-top: 25px;
+    background-color: #1B1056;
+    color: azure;
+}
+nav, main  {
+    display: inline-block;
+    vertical-align: top
+}
+nav {
+    width:90px;
+    
+    position: fixed;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: nav_anim;
+   animation-duration: 0.5s;
+}
+main {
+    width: 100%;
+    padding-bottom: 30px;
+}
+ul {
+    background-color: #1B1056;
+}
+ul li {
+    padding-bottom:15px;
+    padding-top: 15px;
+    text-align: center;
+ /*   background-color: #1B1056;*/
+    overflow: hidden;
+    
+}
+ul li a {
+    color:azure;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background-color: #465982;
+}
+main div {
+   text-align: center;
+}
+main div src {
+    width: 35%;
+    margin-top:10px;
+}
+main div p {
+    text-align:left;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-right: 50px;
+    font-size: 125%;
+}
+
+.mobile-nav {
+    display:none;
+    position:fixed;
+    background-color: #1B1056;
+    text-align: left;
+    padding-bottom:20px;
+    
+}
+.mobile-nav a {
+    background-color: azure;
+    font-size: 150%;
+}
+
+nav.mobile {
+    width: 0;
+    overflow: hidden;
+    position:fixed;
+    top: 152px;
+    left:0;
+    z-index: 1;
+    height: 100%;
+    transition: width 0.5s ease;
+    display:none;
+}
+
+nav.mobile ul {
+    background-color: #1B1056CC;
+}
+
+#main-navigation:target {
+    width: 100%;
+    background-color: #1B105699;
+}
+
+
+
+@keyframes h2nav {
+  0%   {background-color:#1B1056; left:-1500px; top:0px;}
+  50% {background-color:#1B1056; left:0px; top:0px;}
+  60%  {background-color:#1B1056; left:0px; top:0px;}
+  100%  {background-color:#1B1056; left:0px; top:0px;}
+}
+
+
+@keyframes nav_anim {
+  0%   {left:-100px; top:152px;}
+  100% {left:0px; top:152px;}
+}
+
+
+@media screen and (max-width: 600px) {
+            nav.desktop {
+                display:none;
+            }
+            div.mobile-nav {
+            display:block;
+            }
+            nav.mobile {
+            display:inline-block;
+            }
+            
+        }

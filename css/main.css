@@ -51,7 +51,7 @@ table {
 
 body {
       background-color: azure; 
- /*   background-image: url("file:///C:/Users/DCI/Desktop/examples/project/image/sajama.jpg");*/
+      scroll-behavior: smooth;
 }
 h1 {
     font-size: 250%;
@@ -86,8 +86,7 @@ nav, main  {
     vertical-align: top
 }
 nav {
-    width:90px;
-    
+    width:90px;    
     position: fixed;
    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -134,7 +133,8 @@ main div p {
 .mobile-nav {
     display:none;
     position:fixed;
-    background-color: #1B1056;    
+    background-color: #1B1056;
+    border-radius: 10px;    
 }
 .mobile-nav a {
     font-size: 200%; /*make the icon twice bigger*/
@@ -156,11 +156,14 @@ nav.mobile {
 nav.mobile ul {
     display: block;
     width: 100%;
+    height: 100%;
     background-color: #1B1056CC;
 }
+
 nav.mobile ul li a {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 #main-navigation:target {

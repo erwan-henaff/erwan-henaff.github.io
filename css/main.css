@@ -77,9 +77,9 @@ h3 {
     font-size: 110%;
     font-weight: 600;
     padding:20px;
-    background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
+    /* background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 15px; */
 }
 header {
     text-align: center;
@@ -91,16 +91,20 @@ footer {
     text-align:center;
     padding-top: 25px;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
-   border: 1px solid black;
-   border-radius: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
-nav, main  {
+main  {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
     border-radius: 15px;
 
 }
 nav {
+    display: none;
+
+    vertical-align: top;
+    border-radius: 15px;
     width:90px;    
     position: fixed;
    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
@@ -108,11 +112,10 @@ nav {
    animation-name: nav_anim;
    animation-duration: 0.5s;
 }
-html, main {
+html, main, .page-wrap {
     width: 100%;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     border-radius: 15px;
-
 }
 ul {
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
@@ -132,6 +135,7 @@ ul li a {
 }
 nav ul li:hover {
     background-color: #777;
+    border-radius: 15px;
 }
 main section {
    text-align: center;
@@ -158,7 +162,7 @@ main section p {
 /* ----------- nav bars -----------------*/
 
 .mobile-nav {
-    display:none;
+    display:block;
     position:fixed;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
     border: 1px solid black;
@@ -177,7 +181,7 @@ nav.mobile {
     z-index: 1;
     height: 100%;
     transition: width 0.5s ease;
-    display:none;
+    display:inline-block;
     border-radius: 15px; 
 }
 
@@ -215,15 +219,15 @@ nav.mobile ul li a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
             nav.desktop {
-                display:none;
+                display:inline-block;
             }
             div.mobile-nav {
-            display:block;
+            display:none;
             }
             nav.mobile {
-            display:inline-block;
+            display:none;
             }
             
         }

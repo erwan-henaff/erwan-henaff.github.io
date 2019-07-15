@@ -57,8 +57,8 @@ h1 {
     font-weight: 600;
     padding:20px;
     background-color: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
-    border: 1px solid black;
-    border-radius: 15px;
+    /* border: 1px solid black;
+    border-radius: 15px; */
 }
 h2 {
     font-size:125%;
@@ -86,6 +86,9 @@ header {
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
     border: 1px solid black;
     border-radius: 15px;
+}
+header p {
+    padding: 10px;
 }
 footer {
     text-align:center;

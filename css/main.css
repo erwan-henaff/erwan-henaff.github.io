@@ -169,13 +169,10 @@ main section p {
     z-index: 11;
     position:fixed;
     top: 0;
+    transition: 1.4s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-/* #labelburger {
-    position: fixed;
-    top: 0;
-    right:0;
-    z-index: 11;
-} */
+
 #burgericon {
     position: absolute;
 
@@ -195,13 +192,17 @@ main section p {
     height: 7px;
     background-color: rgb(255, 158, 11);
     position: absolute;
-    transition: 0.6s;
+    transition: 0.7s;
 }
 .line::before {
     top: -17px;
 }
 .line::after {
     top: 17px; 
+}
+
+#main-navigation:target ~ #burger {
+    opacity: 0;
 }
 
 #main-navigation:target ~ #burger #linkid #burgericon .line {
@@ -217,15 +218,13 @@ main section p {
 }
 
 
+/* ------------------------------ nav bars -----------------*/
+/*-------------- makes the menu appear on mobile with targeted link on #burger .... */
 
-
-/* ----------- nav bars -----------------*/
 #main-navigation:target {
-    width: 100%;
+    width: 80%;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
 }
-
-
 
 .mobile-nav {
     display:block;
@@ -237,7 +236,6 @@ main section p {
 .mobile-nav a {
     font-size: 200%; /*make the icon twice bigger*/
 }
-
 nav.mobile {
     width: 0;
     overflow: hidden;

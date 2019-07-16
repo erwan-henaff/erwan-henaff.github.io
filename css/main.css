@@ -190,7 +190,7 @@ main section p {
     content: '';
     width: 35px;
     height: 7px;
-    background-color: rgb(255, 158, 11);
+    background-color: rgb(255, 157, 0);
     position: absolute;
     transition: 0.7s;
 }
@@ -222,7 +222,7 @@ main section p {
 /*-------------- makes the menu appear on mobile with targeted link on #burger .... */
 
 #main-navigation:target {
-    width: 80%;
+    width: 100%;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
 }
 
@@ -251,15 +251,21 @@ nav.mobile {
 
 nav.mobile ul {
     display: block;
+
     width: 100%;
     height: 100%;
     background-color: #linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
 }
+/* nav.mobile ul li {
+    width: 100%;
+    padding: 20px 0;
+    height: 100px;
+} */
 
 nav.mobile ul li a {
     display: block;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 

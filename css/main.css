@@ -85,7 +85,7 @@ header {
     text-align: center;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 header p {
     padding: 10px;
@@ -138,18 +138,23 @@ ul li a {
 }
 nav ul li:hover {
     background-color: #777;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 main section {
    text-align: center;
    background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
    border: 1px solid black;
-   border-radius: 15px;
+   border-radius: 8px;
    padding: 10px;
 }
-main section src {
+main section img {
     width: 35%;
     margin-top:10px;
+    max-width: 250px;
+    border: 1px solid black;
+
+    border-radius: 8px;
+    overflow: hidden;
 }
 main section p {
     text-align:left;
@@ -180,7 +185,7 @@ main section p {
     height:50px;
     background: linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));
     border: 1px solid black;
-    border-radius: 15px;    
+    border-radius: 8px;    
     display: flex;
     justify-content: center;
     align-items: center;

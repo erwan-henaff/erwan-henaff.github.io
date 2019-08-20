@@ -193,6 +193,13 @@ main section video {
     display:none;
 }
 
+/* #canvas_mic_section {
+    height: 800px;
+} */
+#sketch-div {
+    height:100%;
+}
+
 
 
 /*  -----------------burger icon for mobile menu bar --------------- */

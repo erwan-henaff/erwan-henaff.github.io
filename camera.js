@@ -2,7 +2,7 @@ var canvas = document.getElementById('lookatme');
 var ctx = canvas.getContext('2d');
 
 // canvas.width = innerWidth;
-// canvas.height = innerHeight - 300;
+canvas.height = 300;
 
 // ctx.fillStyle = "red";
 // ctx.fillRect(0, 0, canvas.width, canvas.height);

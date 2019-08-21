@@ -9,7 +9,7 @@ var moveforward = 0;
 var widthwindow = window.innerWidth;
 
 function setup() { 
-    var canvas = createCanvas(500, 500, WEBGL);
+    var canvas = createCanvas(400, 600, WEBGL);
 
     // Move the canvas so it’s inside our <div id="sketch-holder">.
 
@@ -48,9 +48,9 @@ function draw() {
     background(140,45,255);
     stroke (255);
     noFill();
-    translate(-widthwindow/8,-height/3);
+    translate(-widthwindow/2,-height/3);
 
-    rotateX(PI/3);
+    rotateX(PI/4);
     for (let y = 0; y < cols-1; y++) {
         beginShape(TRIANGLE_STRIP);
         for (let x = 0; x < rows-1; x++) {

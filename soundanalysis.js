@@ -34,15 +34,15 @@ function setup() {
 function draw() { 
 
         var yoff = moveforward;
-        for (let y = 0; y < cols-1; y++) {
+        for (let y = 0; y < cols; y++) {
             var xoff = 0;
-            for (let x = 0; x < rows-1; x++) {
+            for (let x = 0; x < rows; x++) {
                 terrain[y][x]=map(noise(xoff,yoff), 0, 1, -50, 50);
                 xoff += 0.1;
         }
         yoff += 0.1;    
     }
-    moveforward -= 0.08;
+    moveforward -= 0.02;
 
 
     background(140,45,255);

@@ -12,15 +12,36 @@
     <title>Portfolio Erwan Henaff</title>
 </head>
 
+<header>
+
+        <h1>Erwan Henaff</h1>
+        <p>Incoming web-developer</p>
+</header>
+
 <body>
 
-<div class="page-wrap">
+<!-- <div class="page-wrap">   -->
+        <nav id="main-navigation" class="mobile">
+            
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#technologies">Skills</a></li>
+                    <li><a href="#">CSS&nbspcoding</a></li>
+                    <li><a href="#">Get&nbspin&nbsptouch</a></li>
+                    <li><a href="#">Close&nbspMenu</a></li>
+                </ul>
+        </nav>
+<!-- #burger must be below in order to be targeted by the link from main-navigation downward  -->
 
-<header>
-    <div class="mobile-nav" style="linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));"><a href="#main-navigation"><i class="fas fa-bars"></i></a></div>
-    <h1>Erwan Henaff</h1>
-    <p>Incoming web-developer</p>
-</header>
+        <div id="burger" class="mobile-nav" style="linear-gradient(rgb(211, 211, 211), rgb(255, 213, 136));">
+            <a href="#main-navigation" id="linkid">
+                <div id="burgericon">
+                    <div class="line"></div>
+                </div>
+            </a>
+        </div>
+
     <nav class="desktop">
         <ul>
             <li><a href="index.html">About</a></li>
@@ -30,25 +51,15 @@
             <li><a href="#">Get in touch</a></li>
         </ul>
     </nav>
-    <nav id="main-navigation" class="mobile">
-       <a href="#"></a>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#technologies">Skills</a></li>
-            <li><a href="#">CSS&nbspcoding</a></li>
-            <li><a href="#">Get&nbspin&nbsptouch</a></li>
-            <li><a href="#">Close&nbspMenu</a></li>
-        </ul>
-    </nav>
+    
 <main>
     <section>
-       <img src="image/jog2.jpg" style="width:35%; margin-top: 10px; max-width: 250px;" alt="myself">
+       <img src="image/jog2.jpg" alt="myself">
         <article>
         <p>Hi, I'm Erwan, living in Berlin and aiming at becoming web-developer.
         </p>
         <p>
-        Passionate about electronic music and soon coding. Learning right now at the <a href="https://digitalcareerinstitute.org" target="_blank">Digital Career Institute</a> everything about HTML5, CSS3L and soon enough Javascript and all related tools.<br> Like Pliny the Elder once said : Not a day without a line of code!
+        Passionate about electronic music and coding. Learning right now at the <a href="https://digitalcareerinstitute.org" target="_blank">Digital Career Institute</a> everything about HTML5, CSS3L and soon enough Javascript and all related tools.<br> Like Pliny the Elder once said : Not a day without a line of code!
         </p>
         </article>
     </section>
@@ -56,9 +67,11 @@
         <h1>Projects</h1>
 
         <p>In construction : It will redirect soon to another page</p>
+        <a href="camera.html">Some experimentation with access to the camera of your computer</a><br>
+        <a href="soundanalysis.html">Some experimentation with the audio input of your computer</a><br>
 
-        <a href="https://codepen.io/erwan_in_color/">Codepen</a>
-        <a href="https://github.com/erwan-henaff">Github</a>
+        <a href="https://codepen.io/erwan_in_color/">Codepen</a> <br>
+        <a href="https://github.com/erwan-henaff">Github</a><br>
     </section>
     <section id="technologies">
         <h1>Teachnologies and Libraries</h1>
@@ -71,7 +84,7 @@
         <p>P5.js</p>    
     </section>
 </main>
-</div>
+<!-- </div> -->
 
 <footer>&copy; Copyright 2019 by Erwan Henaff</footer>
            
